@@ -24,13 +24,17 @@ The project is written for Java 8, if you use any older Java version you will en
 
 ### Configuration
 
-A config sample is included with the project. The path variable in both input and ouput is only required if the type is set to file.
-
+A config sample is included with the project. The path variable in both input and output is only required if the type is set to file.
 
 ### UML
 
 A uml is included in the same directory as this readme.
 
+
+### Future Considerations
+
+I think this class definitely needs to adopt a standard build process. The two popular ones (around 90% market share) are maven and gradle. Eclipse, or any other IDE for that matter, isn't a standard tool and shouldn't be used as such.
+
 ### Video
 
-To demonstrate this project, I have included a video: 
+To demonstrate this project, I have included a video:
