@@ -22,7 +22,6 @@ public class InputConfiguration {
                     return new FileInput(Paths.get(path));
                 } catch (Exception ex) {
                     System.out.println("Bad configuration - input.");
-                    System.exit(0);
                 }
             case CONSOLE:
                 return new ConsoleInput();

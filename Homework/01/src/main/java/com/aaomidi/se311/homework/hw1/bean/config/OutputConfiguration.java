@@ -22,7 +22,6 @@ public class OutputConfiguration {
                     return new FileOutput(Paths.get(path));
                 } catch (Exception ex) {
                     System.out.println("Bad configuration - output.");
-                    System.exit(0);
                 }
             case CONSOLE:
                 return new ConsoleOutput();

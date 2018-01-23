@@ -11,6 +11,7 @@ public class ConsoleInput implements Input {
 
     @Override
     public Stream<String> getInput() {
+        System.out.println("Please enter your text:");
         Scanner scanner = new Scanner(input);
         List<String> input = new ArrayList<>();
         while (true) {

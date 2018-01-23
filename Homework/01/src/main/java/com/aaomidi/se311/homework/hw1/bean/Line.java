@@ -1,17 +1,16 @@
 package com.aaomidi.se311.homework.hw1.bean;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
-public class Sentence implements Comparable<Sentence> {
+public class Line implements Comparable<Line> {
     private final String sentence;
 
-    public Sentence(String sentence) {
+    public Line(String sentence) {
         this.sentence = sentence;
     }
 
-    public Sentence(List<String> words) {
+    public Line(List<String> words) {
         StringBuilder sb = new StringBuilder();
         for (String s : words) {
             sb.append(s);
@@ -21,24 +20,15 @@ public class Sentence implements Comparable<Sentence> {
         this.sentence = sb.toString();
     }
 
-    @Override
-    public String toString() {
-        return "Sentence{" +
-                "sentence='" + sentence + '\'' +
-                '}'+"\n";
+    public static List<Line> convert(List<String> list) {
+        return list.stream().map(Line::new).collect(Collectors.toList());
     }
 
-    public List<Sentence> circularShift() {
-        List<String> words = new ArrayList<>(Arrays.asList(sentence.split("[^a-zA-Z]+")));
-
-        List<Sentence> result = new ArrayList<>();
-
-        for (int i = 0; i < words.size(); i++) {
-            words.add(words.remove(0));
-            result.add(new Sentence(words));
-        }
-
-        return result;
+    @Override
+    public String toString() {
+        return "Line{" +
+                "sentence='" + sentence + '\'' +
+                '}' + "\n";
     }
 
     public String getSentence() {
@@ -46,7 +36,7 @@ public class Sentence implements Comparable<Sentence> {
     }
 
     @Override
-    public int compareTo(Sentence o) {
+    public int compareTo(Line o) {
         return this.getSentence().toLowerCase().compareTo(o.getSentence().toLowerCase());
     }
 }

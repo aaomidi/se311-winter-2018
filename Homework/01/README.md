@@ -30,7 +30,6 @@ A config sample is included with the project. The path variable in both input an
 
 A uml is included in the same directory as this readme.
 
-
 ### Future Considerations
 
 I think this class definitely needs to adopt a standard build process. The two popular ones (around 90% market share) are maven and gradle. Eclipse, or any other IDE for that matter, isn't a standard tool and shouldn't be used as such.
