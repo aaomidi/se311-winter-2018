@@ -11,11 +11,11 @@ public class Generator extends Filter<String> {
     private final Path path;
 
 
-    public Generator(Pipe<String> output, String filePath) throws Exception {
+    public Generator(Pipe<String> output, String filePath) throws IOException {
         super(null, output);
         path = Paths.get(filePath);
         if (path == null) {
-            throw new Exception("File not found.");
+            throw new IOException("File not found.");
         }
     }
 

@@ -2,6 +2,8 @@ package com.aaomidi.se311.labs.lab1;
 
 import com.aaomidi.se311.labs.lab1.bean.*;
 
+import java.io.IOException;
+
 public class MasterControl {
     public MasterControl(String... args) {
         if (args.length == 0) {
@@ -16,7 +18,7 @@ public class MasterControl {
         Filter<String> generatorFilter;
         try {
             generatorFilter = new Generator(inputToUpperPipe, args[0]);
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println("File not found.");
             System.exit(-1);
             return;
