@@ -53,12 +53,8 @@ public class CityInfoController {
 
         // Register listeners
         inputView.getAddCityButton().addActionListener(new AddCityListener());
-
-        /***
-         *** The first action listener has been added above. You need to add the
-         * others below. There needs to be at least one action listener for each
-         * component one which actions can occur.
-         ***/
+        inputView.getClearCitysButton().addActionListener(new ClearCityListListener());
+        inputView.getClearInputButton().addActionListener(new ClearInputFieldsListener());
 
 
         System.out.println("listeners registered in controller for input window");

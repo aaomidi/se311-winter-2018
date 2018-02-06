@@ -42,6 +42,7 @@ public class CityList {
      * Clears the collection of cities.
      */
     public void clearCityList() {
-        this.cityMap = new LinkedHashMap<>();
+        this.cityMap.clear();
+        //this.cityMap = new LinkedHashMap<>();
     }
 }
