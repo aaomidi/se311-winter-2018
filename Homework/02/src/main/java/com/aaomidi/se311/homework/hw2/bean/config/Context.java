@@ -1,9 +1,9 @@
-package com.aaomidi.se311.homework.hw1.bean.config;
+package com.aaomidi.se311.homework.hw2.bean.config;
 
-import com.aaomidi.se311.homework.hw1.bean.Line;
-import com.aaomidi.se311.homework.hw1.bean.Pipe;
-import com.aaomidi.se311.homework.hw1.bean.io.input.Input;
-import com.aaomidi.se311.homework.hw1.bean.io.output.Output;
+import com.aaomidi.se311.homework.hw2.bean.Line;
+import com.aaomidi.se311.homework.hw2.bean.Pipe;
+import com.aaomidi.se311.homework.hw2.bean.io.input.Input;
+import com.aaomidi.se311.homework.hw2.bean.io.output.Output;
 
 public class Context {
     private final Pipe<Line> inPipe;

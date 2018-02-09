@@ -1,5 +1,5 @@
 # SE311
-## Homework 1
+## Homework 2
 
 ### Running & Compiling
 
@@ -11,7 +11,7 @@ The project is written for Java 8, if you use any older Java version you will en
 
 1. In the directory of this readme, execute the following command: `mvn clean package`
 2. Once this is complete, another directory called `jar` will be made.
-3. Run `java -jar jar/HW1.jar config.json`
+3. Run `java -jar jar/HW2.jar config.json`
 
 #### Eclipse
 
@@ -36,4 +36,4 @@ I think this class definitely needs to adopt a standard build process. The two p
 
 ### Video
 
-To demonstrate this project, I have included a video: https://www.youtube.com/watch?v=yQhdf7fLzk4
+To demonstrate this project, I have included a video: https://youtu.be/IKjvVBd0HqM

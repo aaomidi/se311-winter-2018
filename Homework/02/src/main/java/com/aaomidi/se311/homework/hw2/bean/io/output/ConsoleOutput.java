@@ -1,4 +1,4 @@
-package com.aaomidi.se311.homework.hw1.bean.io.output;
+package com.aaomidi.se311.homework.hw2.bean.io.output;
 
 import java.io.PrintStream;
 import java.util.stream.Stream;

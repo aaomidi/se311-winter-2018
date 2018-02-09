@@ -1,6 +1,6 @@
-package com.aaomidi.se311.homework.hw1.bean.filter;
+package com.aaomidi.se311.homework.hw2.bean.filter;
 
-import com.aaomidi.se311.homework.hw1.bean.Pipe;
+import com.aaomidi.se311.homework.hw2.bean.Pipe;
 
 public abstract class Initializer<E> extends Filter<E> {
     public Initializer(Pipe<E> output) {

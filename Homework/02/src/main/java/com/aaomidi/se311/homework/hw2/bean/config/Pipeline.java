@@ -1,8 +1,8 @@
-package com.aaomidi.se311.homework.hw1.bean.config;
+package com.aaomidi.se311.homework.hw2.bean.config;
 
-import com.aaomidi.se311.homework.hw1.bean.Line;
-import com.aaomidi.se311.homework.hw1.bean.filter.Filter;
-import com.aaomidi.se311.homework.hw1.filters.*;
+import com.aaomidi.se311.homework.hw2.bean.Line;
+import com.aaomidi.se311.homework.hw2.bean.filter.Filter;
+import com.aaomidi.se311.homework.hw2.filters.*;
 
 import java.util.function.Function;
 

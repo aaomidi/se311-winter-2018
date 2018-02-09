@@ -1,9 +1,9 @@
-package com.aaomidi.se311.homework.hw1.filters;
+package com.aaomidi.se311.homework.hw2.filters;
 
-import com.aaomidi.se311.homework.hw1.bean.Line;
-import com.aaomidi.se311.homework.hw1.bean.Pipe;
-import com.aaomidi.se311.homework.hw1.bean.filter.Filter;
-import com.aaomidi.se311.homework.hw1.bean.io.output.Output;
+import com.aaomidi.se311.homework.hw2.bean.Line;
+import com.aaomidi.se311.homework.hw2.bean.Pipe;
+import com.aaomidi.se311.homework.hw2.bean.filter.Filter;
+import com.aaomidi.se311.homework.hw2.bean.io.output.Output;
 
 public class OutputFilter extends Filter<Line> {
     private final Output printer;

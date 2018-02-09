@@ -1,4 +1,4 @@
-package com.aaomidi.se311.homework.hw1.bean.io.input;
+package com.aaomidi.se311.homework.hw2.bean.io.input;
 
 import java.io.IOException;
 import java.nio.file.Files;

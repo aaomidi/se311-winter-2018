@@ -1,7 +1,7 @@
-package com.aaomidi.se311.homework.hw1;
+package com.aaomidi.se311.homework.hw2;
 
-import com.aaomidi.se311.homework.hw1.bean.config.Configuration;
-import com.aaomidi.se311.homework.hw1.bean.filter.Filter;
+import com.aaomidi.se311.homework.hw2.bean.config.Configuration;
+import com.aaomidi.se311.homework.hw2.bean.filter.Filter;
 import com.google.gson.Gson;
 
 import java.io.File;

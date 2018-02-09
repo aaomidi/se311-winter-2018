@@ -1,4 +1,4 @@
-package com.aaomidi.se311.homework.hw1.bean;
+package com.aaomidi.se311.homework.hw2.bean;
 
 import java.util.LinkedList;
 

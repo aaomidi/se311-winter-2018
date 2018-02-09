@@ -1,9 +1,9 @@
-package com.aaomidi.se311.homework.hw1.filters;
+package com.aaomidi.se311.homework.hw2.filters;
 
-import com.aaomidi.se311.homework.hw1.bean.Line;
-import com.aaomidi.se311.homework.hw1.bean.Pipe;
-import com.aaomidi.se311.homework.hw1.bean.filter.Initializer;
-import com.aaomidi.se311.homework.hw1.bean.io.input.Input;
+import com.aaomidi.se311.homework.hw2.bean.Line;
+import com.aaomidi.se311.homework.hw2.bean.Pipe;
+import com.aaomidi.se311.homework.hw2.bean.filter.Initializer;
+import com.aaomidi.se311.homework.hw2.bean.io.input.Input;
 
 
 public class InputFilter extends Initializer<Line> {

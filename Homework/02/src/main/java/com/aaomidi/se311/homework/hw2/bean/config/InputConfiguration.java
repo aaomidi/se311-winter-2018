@@ -1,8 +1,8 @@
-package com.aaomidi.se311.homework.hw1.bean.config;
+package com.aaomidi.se311.homework.hw2.bean.config;
 
-import com.aaomidi.se311.homework.hw1.bean.io.input.ConsoleInput;
-import com.aaomidi.se311.homework.hw1.bean.io.input.FileInput;
-import com.aaomidi.se311.homework.hw1.bean.io.input.Input;
+import com.aaomidi.se311.homework.hw2.bean.io.input.ConsoleInput;
+import com.aaomidi.se311.homework.hw2.bean.io.input.FileInput;
+import com.aaomidi.se311.homework.hw2.bean.io.input.Input;
 
 import java.nio.file.Paths;
 
