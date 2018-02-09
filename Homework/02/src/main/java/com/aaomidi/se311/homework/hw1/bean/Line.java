@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Line implements Comparable<Line> {
+    public static final Line FOOTER = new Line((String) null);
     private final String sentence;
 
     public Line(String sentence) {

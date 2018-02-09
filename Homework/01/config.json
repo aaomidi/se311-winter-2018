@@ -1,9 +1,0 @@
-{
-  "input": {
-    "type": "FILE",
-    "path": "input.file"
-  },
-  "output": {
-    "type": "CONSOLE"
-  }
-}

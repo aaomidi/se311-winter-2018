@@ -1,0 +1,18 @@
+{
+  "input": {
+    "type": "FILE",
+    "path": "input.file"
+  },
+  "output": {
+    "type": "CONSOLE"
+  },
+  "pipeline": [
+    "INPUT_FILTER",
+    "OUTPUT_FILTER",
+    "CIRCULAR_SHIFTER",
+    "ALPHABETIZER",
+    "OUTPUT_FILTER",
+    "UPPER_CASE_FILTER",
+    "OUTPUT_FILTER"
+  ]
+}
