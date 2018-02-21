@@ -16,11 +16,10 @@ The project is written for Java 8, if you use any older Java version you will en
 #### Eclipse
 
 1. Make sure you have Eclipse Oxygen 4.7.2. (Different versions may work, but there are no guarantees.)
-2. File -> Import -> Maven -> Existing Maven Projects
-3. Root Directory -> Folder where this readme is located.
-4. Make sure Projects and Add Project(s) to working set is checked. -> Finish
-6. Right click on the main class (HW1.java)
-7. Run it with the argument `config.json`
+2. File -> Open Projects from File System or Archive
+3. Enter the path to the directory where the project is located.
+4. Press Finish.
+5. Run.
 
 ### Configuration
 

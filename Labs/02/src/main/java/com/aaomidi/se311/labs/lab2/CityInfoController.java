@@ -70,10 +70,10 @@ public class CityInfoController {
         @Override
         public void actionPerformed(ActionEvent e) {
             if (model == null) return;
-            String cityName = inputView.jtfName.getText();
-            String cityPopulation = inputView.jtfPopulation.getText();
-            String cityState = inputView.jtfState.getText();
-            String censusYear = (String) inputView.jcbYear.getSelectedItem();
+            String cityName = getInputWindow().jtfName.getText();
+            String cityPopulation = getInputWindow().jtfPopulation.getText();
+            String cityState = getInputWindow().jtfState.getText();
+            String censusYear = (String) getInputWindow().jcbYear.getSelectedItem();
 
             if (cityName == null || cityPopulation == null || cityState == null || censusYear == null)
                 return;
