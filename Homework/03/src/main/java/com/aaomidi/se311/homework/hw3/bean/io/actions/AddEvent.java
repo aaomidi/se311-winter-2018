@@ -3,12 +3,12 @@ package com.aaomidi.se311.homework.hw3.bean.io.actions;
 import com.aaomidi.se311.homework.hw3.MasterControl;
 import com.aaomidi.se311.homework.hw3.bean.Line;
 import com.aaomidi.se311.homework.hw3.bean.LineStorage;
-import com.aaomidi.se311.homework.hw3.bean.io.Action;
+import com.aaomidi.se311.homework.hw3.bean.io.Event;
 
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class AddAction extends Action {
+public class AddEvent extends Event {
     private final static HashSet<String> listenTo;
 
     static {
@@ -19,7 +19,7 @@ public class AddAction extends Action {
 
     Scanner scanner = new Scanner(System.in);
 
-    public AddAction(MasterControl masterControl, LineStorage lineStorage) {
+    public AddEvent(MasterControl masterControl, LineStorage lineStorage) {
         super(masterControl, lineStorage);
     }
 

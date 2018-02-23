@@ -3,7 +3,7 @@ package com.aaomidi.se311.homework.hw3.bean.io.actions;
 import com.aaomidi.se311.homework.hw3.MasterControl;
 import com.aaomidi.se311.homework.hw3.bean.Line;
 import com.aaomidi.se311.homework.hw3.bean.LineStorage;
-import com.aaomidi.se311.homework.hw3.bean.io.Action;
+import com.aaomidi.se311.homework.hw3.bean.io.Event;
 import com.aaomidi.se311.homework.hw3.manager.Algorithm;
 import com.aaomidi.se311.homework.hw3.manager.CircularShifter;
 import com.aaomidi.se311.homework.hw3.manager.Sorter;
@@ -11,7 +11,7 @@ import com.aaomidi.se311.homework.hw3.manager.Sorter;
 import java.util.HashSet;
 import java.util.List;
 
-public class PrintAction extends Action {
+public class PrintEvent extends Event {
     private final static HashSet<String> listenTo;
 
     static {
@@ -21,7 +21,7 @@ public class PrintAction extends Action {
         listenTo.add("p");
     }
 
-    public PrintAction(MasterControl masterControl, LineStorage lineStorage) {
+    public PrintEvent(MasterControl masterControl, LineStorage lineStorage) {
         super(masterControl, lineStorage);
     }
 

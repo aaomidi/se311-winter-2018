@@ -2,12 +2,12 @@ package com.aaomidi.se311.homework.hw3.bean.io.actions;
 
 import com.aaomidi.se311.homework.hw3.MasterControl;
 import com.aaomidi.se311.homework.hw3.bean.LineStorage;
-import com.aaomidi.se311.homework.hw3.bean.io.Action;
+import com.aaomidi.se311.homework.hw3.bean.io.Event;
 
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class DeleteAction extends Action {
+public class DeleteEvent extends Event {
     private final static HashSet<String> listenTo;
 
     static {
@@ -19,7 +19,7 @@ public class DeleteAction extends Action {
 
     Scanner scanner = new Scanner(System.in);
 
-    public DeleteAction(MasterControl masterControl, LineStorage lineStorage) {
+    public DeleteEvent(MasterControl masterControl, LineStorage lineStorage) {
         super(masterControl, lineStorage);
     }
 

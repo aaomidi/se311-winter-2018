@@ -2,11 +2,11 @@ package com.aaomidi.se311.homework.hw3.bean.io.input;
 
 import com.aaomidi.se311.homework.hw3.MasterControl;
 import com.aaomidi.se311.homework.hw3.bean.LineStorage;
-import com.aaomidi.se311.homework.hw3.bean.io.Action;
-import com.aaomidi.se311.homework.hw3.bean.io.actions.AddAction;
-import com.aaomidi.se311.homework.hw3.bean.io.actions.DeleteAction;
-import com.aaomidi.se311.homework.hw3.bean.io.actions.PrintAction;
-import com.aaomidi.se311.homework.hw3.bean.io.actions.QuitAction;
+import com.aaomidi.se311.homework.hw3.bean.io.Event;
+import com.aaomidi.se311.homework.hw3.bean.io.actions.AddEvent;
+import com.aaomidi.se311.homework.hw3.bean.io.actions.DeleteEvent;
+import com.aaomidi.se311.homework.hw3.bean.io.actions.PrintEvent;
+import com.aaomidi.se311.homework.hw3.bean.io.actions.QuitEvent;
 
 import java.io.InputStream;
 import java.util.LinkedList;
@@ -16,7 +16,7 @@ import java.util.stream.Stream;
 
 public class ConsoleInput implements Input {
     private final InputStream input = System.in;
-    private final List<Action> actions = new LinkedList<>();
+    private final List<Event> events = new LinkedList<>();
     private LineStorage lineStorage;
 
     @Override
@@ -25,15 +25,15 @@ public class ConsoleInput implements Input {
         while (true) {
             System.out.print("Add, Delete, Print, Quit: ");
             String str = scanner.nextLine();
-            actions.forEach(a -> a.handle(str));
+            events.forEach(a -> a.handle(str));
         }
     }
 
     public void registerActions(MasterControl masterControl) {
         lineStorage = new LineStorage();
-        actions.add(new AddAction(masterControl, lineStorage));
-        actions.add(new PrintAction(masterControl, lineStorage));
-        actions.add(new DeleteAction(masterControl, lineStorage));
-        actions.add(new QuitAction(masterControl, lineStorage));
+        events.add(new AddEvent(masterControl, lineStorage));
+        events.add(new PrintEvent(masterControl, lineStorage));
+        events.add(new DeleteEvent(masterControl, lineStorage));
+        events.add(new QuitEvent(masterControl, lineStorage));
     }
 }

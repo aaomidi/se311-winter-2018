@@ -2,11 +2,11 @@ package com.aaomidi.se311.homework.hw3.bean.io.actions;
 
 import com.aaomidi.se311.homework.hw3.MasterControl;
 import com.aaomidi.se311.homework.hw3.bean.LineStorage;
-import com.aaomidi.se311.homework.hw3.bean.io.Action;
+import com.aaomidi.se311.homework.hw3.bean.io.Event;
 
 import java.util.HashSet;
 
-public class QuitAction extends Action {
+public class QuitEvent extends Event {
     private final static HashSet<String> listenTo;
 
     static {
@@ -15,7 +15,7 @@ public class QuitAction extends Action {
         listenTo.add("q");
     }
 
-    public QuitAction(MasterControl masterControl, LineStorage lineStorage) {
+    public QuitEvent(MasterControl masterControl, LineStorage lineStorage) {
         super(masterControl, lineStorage);
     }
 
