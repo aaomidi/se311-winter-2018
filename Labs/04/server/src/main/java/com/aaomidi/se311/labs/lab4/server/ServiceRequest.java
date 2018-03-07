@@ -25,7 +25,7 @@ public class ServiceRequest implements Runnable {
 
             PrintStream ps = new PrintStream(client.getOutputStream());
             ps.println(json);
-            //client.shutdownOutput();
+            client.shutdownOutput();
 
         } catch (Exception ex) {
             ex.printStackTrace();
