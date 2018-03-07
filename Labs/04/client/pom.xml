@@ -12,12 +12,15 @@
 
     <artifactId>client</artifactId>
     <version>1.0</version>
+    <name>Client</name>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>com.aaomidi.se311.labs.lab4</groupId>
             <artifactId>commons</artifactId>
             <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

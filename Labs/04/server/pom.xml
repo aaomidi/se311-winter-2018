@@ -12,13 +12,16 @@
 
     <artifactId>server</artifactId>
     <version>1.0</version>
-
+    <name>Server</name>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>com.aaomidi.se311.labs.lab4</groupId>
             <artifactId>commons</artifactId>
             <version>1.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
+
 </project>

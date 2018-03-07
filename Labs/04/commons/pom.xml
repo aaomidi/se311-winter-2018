@@ -12,6 +12,7 @@
 
     <artifactId>commons</artifactId>
     <version>1.0</version>
-
+    <name>Commons</name>
+    <packaging>jar</packaging>
 
 </project>

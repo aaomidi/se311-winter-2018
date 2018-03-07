@@ -1,6 +1,6 @@
 package com.aaomidi.se311.labs.lab4.server;
 
-import com.aaomidi.se311.labs.lab4.commons.Payload;
+import com.aaomidi.se311.labs.lab4.commons.api.Payload;
 import com.google.gson.Gson;
 
 import java.io.IOException;

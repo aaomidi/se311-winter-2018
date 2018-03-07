@@ -1,12 +1,13 @@
-package com.aaomidi.se311.labs.lab4.commons;
+package com.aaomidi.se311.labs.lab4.commons.api;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Payload {
-    private final ArrayList<Integer> list;
+    private final List<Integer> list;
 
-    public Payload(ArrayList<Integer> list) {
+    public Payload(List<Integer> list) {
         this.list = list;
     }
 
@@ -17,7 +18,7 @@ public class Payload {
                 '}';
     }
 
-    public ArrayList<Integer> getList() {
+    public List<Integer> getList() {
         return list;
     }
 }
