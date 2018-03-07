@@ -10,7 +10,7 @@ public class OddFinder {
 
     public static Payload filterOdds(Payload payload) {
         List<Integer> odds = payload.getList();
-        List<Integer> result = odds.stream().filter(integer -> (integer & 1) != 0).collect(Collectors.toCollection(ArrayList::new));
+        List<Integer> result = odds.stream().filter(val -> (val & 1) != 0).collect(Collectors.toCollection(ArrayList::new));
 
         return new Payload(result);
     }
