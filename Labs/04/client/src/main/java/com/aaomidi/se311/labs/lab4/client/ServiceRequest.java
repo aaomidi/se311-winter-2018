@@ -3,7 +3,6 @@ package com.aaomidi.se311.labs.lab4.client;
 import com.aaomidi.se311.labs.lab4.commons.api.Payload;
 import com.google.gson.Gson;
 
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.net.Socket;
@@ -27,12 +26,13 @@ public class ServiceRequest implements Runnable {
                 ps.print(gson.toJson(payload));
                 socket.shutdownOutput();
                 Payload result = gson.fromJson(new InputStreamReader(socket.getInputStream()), Payload.class);
-                System.out.println(result);
+                if (result == null || result.getList() == null) return;
+
+                result.getList().forEach(i -> System.out.println(i + ", "));
             }
 
-
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception ignored) {
+            System.out.println("Something went wrong.");
         }
     }
 

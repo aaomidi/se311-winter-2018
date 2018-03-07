@@ -27,13 +27,11 @@ public class ServiceRequest implements Runnable {
             ps.println(json);
             client.shutdownOutput();
 
-        } catch (Exception ex) {
-            ex.printStackTrace();
+        } catch (Exception ignored) {
         } finally {
             try {
                 client.close();
-            } catch (IOException e) {
-                e.printStackTrace();
+            } catch (IOException ignored) {
             }
         }
     }
