@@ -65,8 +65,10 @@ public abstract class Calculator {
     Calculator getPreviousCalculatorDifferentType() {
         Calculator calc = this;
         Class clazz = this.getClass();
-
+        int i = 0;
         while (true) {
+            if (i++ > MAX_LOOP) return null;
+
             if (calc.previous == null) return null;
 
             calc = calc.previous;
