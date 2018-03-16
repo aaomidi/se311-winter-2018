@@ -1,7 +1,7 @@
 package com.aaomidi.se311.homework.hw4.client.buttons;
 
 import com.aaomidi.se311.homework.hw4.client.CalculatorView;
-import com.aaomidi.se311.homework.hw4.common.calc.Operand;
+import com.aaomidi.se311.homework.hw4.common.calc.operation.NumberOperation;
 
 import java.awt.event.ActionEvent;
 
@@ -16,7 +16,7 @@ public class NumberButton extends CalculatorButton {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        getCalculator().addOperation(new Operand(number));
+        getController().apply(new NumberOperation(number));
         update();
     }
 }

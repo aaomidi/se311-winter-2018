@@ -1,17 +1,17 @@
 package com.aaomidi.se311.homework.hw4.client.buttons;
 
-import com.aaomidi.se311.homework.hw4.common.calc.Calculator;
+import com.aaomidi.se311.homework.hw4.client.CalculatorController;
 
 import javax.swing.*;
 
 public class CalculatorDisplay extends JTextField {
-    private final Calculator calculator;
+    private final CalculatorController controller;
 
-    public CalculatorDisplay(Calculator calculator) {
-        this.calculator = calculator;
+    public CalculatorDisplay(CalculatorController controller) {
+        this.controller = controller;
     }
 
     public void update() {
-        this.setText(calculator.getDisplay());
+        this.setText(controller.getDisplay());
     }
 }

@@ -1,7 +1,5 @@
 package com.aaomidi.se311.homework.hw4.client;
 
-import com.aaomidi.se311.homework.hw4.common.calc.Calculator;
-
 import java.io.PrintStream;
 import java.net.Socket;
 
@@ -12,18 +10,17 @@ public class ServiceRequest implements Runnable {
 //        gson = new GsonBuilder().registerTypeAdapter(Operation.class, new OperationSerializer()).create();
 //    }
 
-    private final Calculator calculator;
+    private final String equation;
 
-    public ServiceRequest(Calculator calculator) {
-        this.calculator = calculator;
+    public ServiceRequest(String equation) {
+        this.equation = equation;
     }
 
     @Override
     public void run() {
         try (Socket socket = new Socket("localhost", 41512)) {
-            String send = calculator.getMath();
             try (PrintStream ps = new PrintStream(socket.getOutputStream())) {
-                ps.print(send);
+                ps.print(equation);
                 socket.shutdownOutput();
             }
         } catch (Exception ex) {

@@ -1,10 +1,10 @@
 package com.aaomidi.se311.homework.hw4.common.calc;
 
-public interface Operation {
-    Type getType();
+import com.aaomidi.se311.homework.hw4.common.calc.calculator.Calculator;
 
-    enum Type {
-        OPERAND,
-        OPERATOR
+public interface Operation {
+    default Calculator apply(Calculator calculator) {
+        return calculator.apply(this);
     }
+
 }

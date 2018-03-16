@@ -1,14 +1,13 @@
 package com.aaomidi.se311.homework.hw4.client;
 
 import com.aaomidi.se311.homework.hw4.client.buttons.*;
-import com.aaomidi.se311.homework.hw4.common.calc.Calculator;
-import com.aaomidi.se311.homework.hw4.common.calc.OpType;
+import com.aaomidi.se311.homework.hw4.common.calc.operation.OpType;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class CalculatorView {
-    private final Calculator calculator;
+    private final CalculatorController controller;
 
     private JFrame guiFrame;
 
@@ -20,8 +19,8 @@ public class CalculatorView {
     private CalculatorDisplay display;
 
     public CalculatorView() {
-        this.calculator = new Calculator();
-        display = new CalculatorDisplay(calculator);
+        this.controller = new CalculatorController();
+        display = new CalculatorDisplay(controller);
         initialize();
     }
 
@@ -35,12 +34,12 @@ public class CalculatorView {
         resultPanel = new JPanel();
         operatorPanel = new JPanel();
 
-        display = new CalculatorDisplay(calculator);
+        display = new CalculatorDisplay(controller);
 
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         actionPanel.setLayout(new BoxLayout(actionPanel, BoxLayout.X_AXIS));
         numberPanel.setLayout(new GridLayout(4, 3));
-        operatorPanel.setLayout(new GridLayout(4, 1));
+        operatorPanel.setLayout(new GridLayout(5, 1));
 
         prepareNumberPanel(numberPanel);
         prepareOperatorPanel(operatorPanel);
@@ -62,7 +61,7 @@ public class CalculatorView {
 
     private void prepareExtras(JPanel numberPanel) {
         numberPanel.add(new NumberButton(this, 0));
-        numberPanel.add(new EqualsButton(this));
+        numberPanel.add(new DiscardButton(this));
         numberPanel.add(new ResetButton(this));
     }
 
@@ -76,13 +75,13 @@ public class CalculatorView {
     private void prepareOperatorPanel(JPanel panel) {
 
         for (OpType ot : OpType.values()) {
-            if (ot == OpType.EQUALS) continue;
             panel.add(new OperatorButton(this, ot));
         }
+        panel.add(new EqualsButton(this));
     }
 
-    public Calculator getCalculator() {
-        return calculator;
+    public CalculatorController getController() {
+        return controller;
     }
 
     public void update() {

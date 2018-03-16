@@ -2,24 +2,24 @@ package com.aaomidi.se311.homework.hw4.client.buttons;
 
 import com.aaomidi.se311.homework.hw4.client.CalculatorView;
 import com.aaomidi.se311.homework.hw4.client.ServiceRequest;
-import com.aaomidi.se311.homework.hw4.common.calc.OpType;
-import com.aaomidi.se311.homework.hw4.common.calc.Operator;
+import com.aaomidi.se311.homework.hw4.common.calc.operation.EqualsOperation;
 
 import java.awt.event.ActionEvent;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
-public class EqualsButton extends OperatorButton {
+public class EqualsButton extends CalculatorButton {
 
     public EqualsButton(CalculatorView parent) {
-        super(parent, OpType.EQUALS);
+        super(parent);
+        setText("=");
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        getCalculator().addOperation(new Operator(opType));
+        getController().apply(new EqualsOperation());
         update();
-        ServiceRequest serviceRequest = new ServiceRequest(parent.getCalculator());
+        System.out.println(parent.getController().getEquation());
+        ServiceRequest serviceRequest = new ServiceRequest(parent.getController().getEquation());
         serviceRequest.run();
     }
 }
