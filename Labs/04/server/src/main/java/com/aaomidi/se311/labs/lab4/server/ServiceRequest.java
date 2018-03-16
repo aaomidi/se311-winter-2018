@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.net.Socket;
 
-public class ServiceRequest implements Runnable {
+public class ServiceRequest implements Runnable{
     private final Gson gson = new Gson();
     private final Socket client;
 
@@ -35,4 +35,5 @@ public class ServiceRequest implements Runnable {
             }
         }
     }
+
 }
