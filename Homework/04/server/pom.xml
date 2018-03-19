@@ -16,12 +16,4 @@
     <name>Server</name>
     <packaging>jar</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>${project.parent.groupId}</groupId>
-            <artifactId>commons</artifactId>
-            <scope>compile</scope>
-            <version>1.0</version>
-        </dependency>
-    </dependencies>
 </project>
