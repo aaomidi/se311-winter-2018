@@ -5,12 +5,6 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 
 public class ServiceRequest implements Runnable {
-//    private final static Gson gson;
-//
-//    static {
-//        gson = new GsonBuilder().registerTypeAdapter(Operation.class, new OperationSerializer()).create();
-//    }
-
     private final Socket client;
 
     public ServiceRequest(Socket client) {
@@ -22,8 +16,6 @@ public class ServiceRequest implements Runnable {
         try (InputStreamReader reader = new InputStreamReader(client.getInputStream())) {
             BufferedReader bufferedReader = new BufferedReader(reader);
             String equation = bufferedReader.readLine();
-            //CalculatorPayload calculatorPayload = gson.fromJson(reader, CalculatorPayload.class);
-            //System.out.println(calculatorPayload.getPayload().getMath());
             System.out.println(equation);
         } catch (Exception ex) {
             ex.printStackTrace();
