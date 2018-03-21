@@ -1,6 +1,6 @@
 # SE311
 ## Homework 4
-## Name: Amir Omidi
+## Name: Amir Omidi (aao53)
 
 ### Notice
 
@@ -38,3 +38,7 @@ The project is written for Java 8, if you use any older Java version you will en
 The eclipse process and the demonstration of this project is done in this video:
 
 To demonstrate this project, I have included a video: https://youtu.be/4YrmRH670iU
+
+### Extra Credit
+
+As you can see in the screenshot, I've completed the survey.

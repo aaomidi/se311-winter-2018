@@ -1,4 +1,4 @@
-package com.aaomidi.se311.homework.hw4;
+package com.aaomidi.se311.homework.hw4.server;
 
 import java.net.ServerSocket;
 import java.net.Socket;

@@ -7,7 +7,7 @@
     <groupId>com.aaomidi.se311.homework.hw4</groupId>
     <artifactId>hw4</artifactId>
     <version>1.0</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <name>HW4</name>
 
     <properties>

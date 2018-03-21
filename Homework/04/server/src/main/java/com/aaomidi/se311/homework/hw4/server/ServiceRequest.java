@@ -1,4 +1,4 @@
-package com.aaomidi.se311.homework.hw4;
+package com.aaomidi.se311.homework.hw4.server;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
